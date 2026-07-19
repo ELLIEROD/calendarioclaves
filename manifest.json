@@ -1,0 +1,22 @@
+{
+  "name": "Calendário de Claves e Produção",
+  "short_name": "ClavesApp",
+  "description": "Consulta intuitiva de data juliana, semanas industriais e validades.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F0E68C",
+  "theme-color": "#0071BC",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

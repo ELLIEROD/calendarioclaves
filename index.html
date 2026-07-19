@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendário de Claves & Produção</title>
+  
+  <!-- Configurações para PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0071BC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="watermark-background"></div>
+
+  <div class="container">
+    <h1>Calendário de Claves</h1>
+    <h2>Consulta de Datas & Produção</h2>
+
+    <div class="bloco-painel">
+      <p class="secao-titulo">📋 Seleção de Linha e Produto</p>
+      
+      <div class="input-group">
+        <label for="seletorLinha">Linha:</label>
+        <select id="seletorLinha">
+          <option value="linha20k">Linha 4 - 20k</option>
+          <option value="linha3">Linha 3</option>
+          <option value="bolleria">Linha 1 - Bolleria</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="seletorProduto">Produto:</label>
+        <select id="seletorProduto"></select>
+      </div>
+    </div>
+
+    <div class="bloco-painel" style="margin-top: 20px;">
+      <p class="secao-titulo" style="background-color: #E31837;">📊 Dados Práticos de Produção</p>
+      
+      <div class="grid-dados">
+        <div class="card-dado">
+          <span class="label-dado">Data Atual</span>
+          <span id="dataAtual" class="valor-dado">--/--/----</span>
+        </div>
+        <div class="card-dado">
+          <span class="label-dado">Data Juliana</span>
+          <span id="dataJuliana" class="valor-dado destaque-azul">---</span>
+        </div>
+        <div class="card-dado">
+          <span class="label-dado">Semana de Produção</span>
+          <span id="semanaProducao" class="valor-dado destaque-vermelho">--</span>
+        </div>
+        <div class="card-dado full-width">
+          <span class="label-dado">Validade do Produto</span>
+          <span id="dataValidade" class="valor-dado">--/--/----</span>
+        </div>
+        <div class="card-dado">
+          <span class="label-dado">Retirada (DR)</span>
+          <span id="dataRetirada" class="valor-dado">--/--</span>
+        </div>
+        <div class="card-dado">
+          <span class="label-dado">Envio (DE)</span>
+          <span id="dataEnvio" class="valor-dado">--/--</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relogio-digital" id="relogioCentral">
+    🕒 <span id="horaDigital">--:--:--</span>
+  </div>
+
+  <button id="toggleDarkMode" class="dark-toggle">🌙</button>
+  <div id="darkOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
