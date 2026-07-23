@@ -1,5 +1,5 @@
 // 1. Subimos para v3 para forçar o descarte da v2 no cache do navegador
-const CACHE_NAME = 'claves-app-v3';
+const CACHE_NAME = 'claves-app-v4';
 
 // 2. Incluídos os caminhos dos ícones no ASSETS
 const ASSETS = [
